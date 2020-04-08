@@ -12,32 +12,42 @@ int main()
     float p1, p2, p3, p4, menor, med;
 
     printf("Digite a nota da primeira prova: ");
-    scanf("%f",&p1);
+    scanf("%f", &p1);
     fflush(stdin);
 
     printf("Digite a nota da segunda prova: ");
-    scanf("%f",&p2);
+    scanf("%f", &p2);
     fflush(stdin);
 
     printf("Digite a nota da terceira prova: ");
-    scanf("%f",&p3);
+    scanf("%f", &p3);
     fflush(stdin);
 
     printf("Digite a nota da quarta prova: ");
-    scanf("%f",&p4);
+    scanf("%f", &p4);
     fflush(stdin);
 
-    if(p1<=p2 && p1<=p3 && p1<=p4){
-        menor=p1;
-    }else if(p2<=p1 && p2<=p3 && p2<=p4){
-        menor=p2;
-    }else if(p3<=p1 && p3<=p2 && p3<=p4){
-        menor=p3;
-    }else if(p4<=p1 && p4<=p2 && p4<=p3){
-        menor=p4;
-    }else{}
+    if (p1 <= p2 && p1 <= p3 && p1 <= p4)
+    {
+        menor = p1;
+    }
+    else if (p2 <= p1 && p2 <= p3 && p2 <= p4)
+    {
+        menor = p2;
+    }
+    else if (p3 <= p1 && p3 <= p2 && p3 <= p4)
+    {
+        menor = p3;
+    }
+    else if (p4 <= p1 && p4 <= p2 && p4 <= p3)
+    {
+        menor = p4;
+    }
+    else
+    {
+    }
 
-    med=(p1+p2+p3+p4-menor)/3;
+    med = (p1 + p2 + p3 + p4 - menor) / 3;
     printf("%.2f", med);
 
     getchar();

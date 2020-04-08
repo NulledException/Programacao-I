@@ -7,22 +7,22 @@ int main()
     float l1, l2, l3, s, x, area;
 
     printf("Digite o valor do primeiro lado do triangulo: ");
-    scanf("%f",&l1);
+    scanf("%f", &l1);
     fflush(stdin);
 
     printf("Digite o valor do segundo lado do triangulo: ");
-    scanf("%f",&l2);
+    scanf("%f", &l2);
     fflush(stdin);
-    
+
     printf("Digite o valor do terceiro lado do triangulo: ");
-    scanf("%f",&l3);
+    scanf("%f", &l3);
     fflush(stdin);
 
-    s=((l1+l2+l3)/(2));
+    s = ((l1 + l2 + l3) / (2));
 
-    x=(s*(s-l1)*(s-l2)*(s-l3));
+    x = (s * (s - l1) * (s - l2) * (s - l3));
 
-    area=sqrt(x);
+    area = sqrt(x);
 
     printf("A area do seu triangulo e de %.2f", area);
 

@@ -11,19 +11,22 @@ int main()
     int nn, resto;
 
     printf("Digite um numero: ");
-    scanf("%f",&n);
+    scanf("%f", &n);
     fflush(stdin);
 
-    nn=n;
+    nn = n;
 
-    resto= nn % 2;
+    resto = nn % 2;
 
-    if(resto!=0){
+    if (resto != 0)
+    {
         printf("Impar");
-    }else{
+    }
+    else
+    {
         printf("Par");
     }
-    
+
     getchar();
     return 0;
 }

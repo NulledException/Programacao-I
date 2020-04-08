@@ -6,14 +6,14 @@ int main()
     float b, h, result;
 
     printf("Digite o tamanho da base do triangulo: ");
-    scanf("%f",&b);
+    scanf("%f", &b);
     fflush(stdin);
 
     printf("Digite o tamanho da altura do triangulo: ");
-    scanf("%f",&h);
+    scanf("%f", &h);
     fflush(stdin);
 
-    result=(b*h)/2;
+    result = (b * h) / 2;
 
     printf("A area do seu triangulo e de %.2f", result);
 

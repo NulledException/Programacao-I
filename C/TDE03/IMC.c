@@ -7,38 +7,38 @@ int main()
     float altxm, altcm, pesokg, imc;
 
     printf("Digite a sua altura em cm: ");
-    scanf("%f",&altcm);
+    scanf("%f", &altcm);
 
     printf("Digite seu peso atual em kg: ");
-    scanf("%f",&pesokg);
+    scanf("%f", &pesokg);
 
-    altxm=altcm/100;
+    altxm = altcm / 100;
 
-    imc=pesokg/(altxm*altxm);
+    imc = pesokg / (altxm * altxm);
 
-    if(imc<18.5)
+    if (imc < 18.5)
     {
-        printf("Você esta abaixo do peso ideal.");
+        printf("Vocï¿½ esta abaixo do peso ideal.");
     }
-    if(imc>18.5 && imc<24.9)
+    if (imc > 18.5 && imc < 24.9)
     {
-        printf("Você esta com o peso ideal.");
+        printf("Vocï¿½ esta com o peso ideal.");
     }
-    if(imc>25 && imc<29.9)
+    if (imc > 25 && imc < 29.9)
     {
-        printf("Você esta acima do peso ideal.");
+        printf("Vocï¿½ esta acima do peso ideal.");
     }
-    if(imc>30 && imc<34.9)
+    if (imc > 30 && imc < 34.9)
     {
-        printf("Você esta com obesidade de grau 1.");
+        printf("Vocï¿½ esta com obesidade de grau 1.");
     }
-    if(imc>35 && imc<39.9)
+    if (imc > 35 && imc < 39.9)
     {
-        printf("Você esta com obesidade de grau 2.");
+        printf("Vocï¿½ esta com obesidade de grau 2.");
     }
-    if (imc>40)
+    if (imc > 40)
     {
-        printf("Você esta com obesidade de grau 3.");
+        printf("Vocï¿½ esta com obesidade de grau 3.");
     }
     return 0;
 }

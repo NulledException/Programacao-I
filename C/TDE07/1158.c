@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main ()
+int main()
 {
 
     int n, x, y, count, count1, rest, impar, aux, soma;
@@ -10,7 +10,8 @@ int main ()
     scanf("%d", &n);
     fflush(stdin);
 
-    for(count=1; count<=n; count++){
+    for (count = 1; count <= n; count++)
+    {
         printf("Digite o valor para comecar a contagem: ");
         scanf("%d", &x);
         fflush(stdin);
@@ -19,24 +20,31 @@ int main ()
         scanf("%d", &y);
         fflush(stdin);
 
-        rest= x % 2;
+        rest = x % 2;
 
-        if(rest != 0){
-            impar=x;
-        }else{
-            x++;
-            impar=x;
+        if (rest != 0)
+        {
+            impar = x;
         }
-        for(count1=1; count1<y; count1++){   
-            aux=impar;
-            impar= aux + 2;
-            if(count1 == 1){
-                soma= impar+aux;
-            }else{
-                soma=soma+impar;
+        else
+        {
+            x++;
+            impar = x;
+        }
+        for (count1 = 1; count1 < y; count1++)
+        {
+            aux = impar;
+            impar = aux + 2;
+            if (count1 == 1)
+            {
+                soma = impar + aux;
+            }
+            else
+            {
+                soma = soma + impar;
             }
         }
-        printf("%d\n",soma);
+        printf("%d\n", soma);
     }
 
     getchar();

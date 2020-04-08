@@ -18,9 +18,12 @@ int main()
     scanf("%f", &v2);
     fflush(stdin);
 
-    if(v1>v2){
+    if (v1 > v2)
+    {
         printf("%.2f", v1);
-    }else{
+    }
+    else
+    {
         printf("%.2f", v2);
     }
 

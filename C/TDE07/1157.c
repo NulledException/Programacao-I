@@ -1,6 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
-
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -8,18 +7,21 @@ int main()
     int num, count, rest;
 
     printf("Digite um numero: ");
-    scanf("%d",&num);
+    scanf("%d", &num);
     fflush(stdin);
 
-    for(count=1; count<=num; count++)
+    for (count = 1; count <= num; count++)
     {
-        rest= num % count;
-        if (rest==0)
+        rest = num % count;
+        if (rest == 0)
         {
             printf("%d\n", count);
-        }else{}
+        }
+        else
+        {
+        }
     }
 
-    getchar ();
+    getchar();
     return 0;
 }

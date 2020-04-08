@@ -6,12 +6,12 @@ int main()
     float l, result;
 
     printf("Digite um lado do quadrado:");
-    scanf("%f",&l);
+    scanf("%f", &l);
     fflush(stdin);
 
-    result=l*l;
+    result = l * l;
 
-    printf("A area do seu quadrado e de %.2f",result);
+    printf("A area do seu quadrado e de %.2f", result);
 
     getchar();
     return 0;
